@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "description": "Hack4Climate app by Innosoft team",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:server watch:build",
+    "watch:build": "webpack --watch --config webpack.config.js",
+    "watch:server": "nodemon --watch server --exec babel-node -- server/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-flow": "^6.23.0",
+    "nodemon": "^1.10.0",
+    "npm-run-all": "^4.1.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack": "^3.8.1",
+    "webpack-hot-middleware": "^2.20.0",
+    "flow-bin": "^0.48.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "express": "^4.14.0",
+    "history": "^4.7.2",
+    "jquery": "^3.2.1",
+    "node-noop": "^1.0.0",
+    "popper.js": "^1.12.8",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}
